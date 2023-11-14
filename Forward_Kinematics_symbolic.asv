@@ -7,9 +7,9 @@ syms theta1 theta2 theta3...% theta4 theta5 theta6 theta7 ...
      d1     d2     d3     %d4     d5     d6     d7         
 
 
-theta = [theta1 theta2 theta3]; %theta4 theta5 theta6 theta7];
+theta = [theta1 0 0]; %theta4 theta5 theta6 theta7];
 a = [0 a2 a3]; %a4 a5 a6 a7];
-alpha = [90 0  0]; % alpha4 alpha5 alpha6 alpha7];
+alpha = [pi/2 0 0]; % alpha4 alpha5 alpha6 alpha7];
 d =[a1 0 0 ]; %d4 d5 d6 d7];
 
 prompt = ("Please put your robot link number: ");
@@ -28,5 +28,4 @@ A = eye(4);
 for i = 1:x
     A = A * A_cell{i};
 end
-
 
